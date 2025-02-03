@@ -27,7 +27,7 @@ public class Student {
     private String profilePicture;
     private String CIN;
     private String CNE;
-    private String Gender;
+    private String gender;
     private String birth;
 
     @NaturalId(mutable = true)

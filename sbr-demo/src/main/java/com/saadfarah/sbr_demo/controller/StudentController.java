@@ -11,15 +11,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/students")
-/*@RequiredArgsConstructor*/ //injected
+@RequiredArgsConstructor //injected
 
 public class StudentController {
 
     private final IStudentService studentService; //only final one should be injected
-
-    public StudentController(IStudentService studentService) {
-        this.studentService = studentService;
-    }
 
     @GetMapping
     public ResponseEntity<List<Student>> getStudents() {
