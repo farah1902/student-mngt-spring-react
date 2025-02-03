@@ -1,0 +1,16 @@
+
+server:
+    port: 9192
+
+spring:
+    application: name=sbr-demo
+    datasource:
+        username: root
+        password: Saadfarah19022000@
+        url: jdbc:mysql://localhost:3306/sbr-student
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        show-sql: true
+        hibernate:
+        ddl-auto: create
+        format_sql: true
